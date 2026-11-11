@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For crèches and preschools with a DCDE contract: daily sign-in and sign-out, hours against NCS and ECCE, and weekly return figures ready.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Attendance Sheet</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Attendance Sheet</a>
+  <nav><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Daily attendance for your crèche — and the NCS and ECCE figures ready for the weekly return</h1>
-    <p class="sub">For crèches and preschools delivering NCS or ECCE: each child is signed in and out on a tablet in the room, attendance and hours are worked out against each child's scheme and registration, and the figures for the weekly return are ready to check and enter.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> For crèches and preschools</p>
+      <h1 class="rise" style="--i:1" data-len="long">Daily attendance for your crèche&nbsp;<span class="soft">— and the NCS and ECCE figures ready for the weekly return</span></h1>
+      <p class="rise" style="--i:2">For crèches and preschools delivering NCS or ECCE: each child is signed in and out on a tablet in the room, attendance and hours are worked out against each child's scheme and registration, and the figures for the weekly return are ready to check and enter.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">I need this</a>
+      <p class="meta rise" style="--i:4">Service in preparation · No payment is accepted on this page</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="130" y="160" font-size="40" fill="#0a1524" font-weight="600">Daily attendance</text><line x1="130" y1="210" x2="1070" y2="210" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="260" width="44" height="44" fill="#dfe8f7" rx="8" stroke="#dde2ea" stroke-width="2" /><rect x="208" y="270" width="200" height="22" fill="#dde2ea" rx="10" /><polyline points="150,284 158,294 174,272" fill="none" stroke="#12397a" stroke-width="4" /><rect x="140" y="332" width="44" height="44" fill="#dfe8f7" rx="8" stroke="#dde2ea" stroke-width="2" /><rect x="208" y="342" width="250" height="22" fill="#b9c3d2" rx="10" /><rect x="140" y="404" width="44" height="44" fill="#dfe8f7" rx="8" stroke="#dde2ea" stroke-width="2" /><rect x="208" y="414" width="300" height="22" fill="#dde2ea" rx="10" /><polyline points="150,428 158,438 174,416" fill="none" stroke="#12397a" stroke-width="4" /><rect x="680" y="260" width="390" height="400" fill="#dfe8f7" rx="20" /><text x="720" y="340" font-size="32" fill="#0a1524" font-weight="600">weekly return</text><rect x="740" y="500" width="46" height="100" fill="#dfe8f7" rx="8" stroke="#dde2ea" stroke-width="2" /><rect x="818" y="440" width="46" height="160" fill="#12397a" rx="8" stroke="#dde2ea" stroke-width="2" /><rect x="896" y="470" width="46" height="130" fill="#dfe8f7" rx="8" stroke="#dde2ea" stroke-width="2" /><rect x="974" y="510" width="46" height="90" fill="#dfe8f7" rx="8" stroke="#dde2ea" stroke-width="2" /></svg></figure>
+    <dl class="facts">
+      <div><dt>For</dt><dd>Crèches and preschools</dd></div>
+      <div><dt>Child</dt><dd>Each child</dd></div>
+      <div><dt>Hours</dt><dd>Weekly return</dd></div>
+      <div><dt>Works</dt><dd>In the browser</dd></div>
+    </dl>
+  </section>
 
   <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Sign in and out</b><span>Each child signed in and out on a tablet in the room, by the staff.</span><br><a class="btn" href="price.html" data-ev="feature_signin">I need this</a></div>
-      <div class="card"><b>NCS and ECCE</b><span>Each child with their scheme, sessions and registered hours.</span><br><a class="btn" href="price.html" data-ev="feature_schemes">I need this</a></div>
-      <div class="card"><b>Weekly figures</b><span>Attendance and hours worked out for the weekly return.</span><br><a class="btn" href="price.html" data-ev="feature_figures">I need this</a></div>
-      <div class="card"><b>Absences flagged</b><span>Children with repeated absences shown before the return is made.</span><br><a class="btn" href="price.html" data-ev="feature_absences">I need this</a></div>
+    <div class="stack"><h2>What you get</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" fill="#0a1524" font-weight="600">Sign in</text><rect x="290" y="190" width="200" height="300" fill="#ffffff" rx="30" stroke="#12397a" stroke-width="4" /><rect x="314" y="230" width="152" height="190" fill="#dfe8f7" rx="12" /><circle cx="390.0" cy="450" r="16" fill="#12397a" /></svg></div>
+        <h3>Sign in and out</h3><p>Each child signed in and out on a tablet in the room, by the staff.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_signin">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" fill="#0a1524" font-weight="600">NCS and ECCE</text><rect x="140" y="230" width="240" height="240" fill="#dfe8f7" rx="18" stroke="#12397a" stroke-width="4" /><rect x="420" y="230" width="240" height="240" fill="#ffffff" rx="18" stroke="#dde2ea" stroke-width="3" /><circle cx="260" cy="330" r="28" fill="#12397a" /><circle cx="540" cy="330" r="28" fill="#dfe8f7" stroke="#12397a" stroke-width="4" /></svg></div>
+        <h3>NCS and ECCE</h3><p>Each child with their scheme, sessions and registered hours.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_schemes">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" fill="#0a1524" font-weight="600">Weekly figures</text><rect x="150" y="360" width="52" height="110" fill="#dfe8f7" rx="8" stroke="#dde2ea" stroke-width="2" /><rect x="240" y="290" width="52" height="180" fill="#dfe8f7" rx="8" stroke="#dde2ea" stroke-width="2" /><rect x="330" y="330" width="52" height="140" fill="#dfe8f7" rx="8" stroke="#dde2ea" stroke-width="2" /><rect x="420" y="270" width="52" height="200" fill="#12397a" rx="8" stroke="#dde2ea" stroke-width="2" /><rect x="510" y="380" width="52" height="90" fill="#dfe8f7" rx="8" stroke="#dde2ea" stroke-width="2" /></svg></div>
+        <h3>Weekly figures</h3><p>Attendance and hours worked out for the weekly return.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_figures">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" fill="#0a1524" font-weight="600">Absences flagged</text><rect x="140" y="230" width="500" height="64" fill="#ffffff" rx="12" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="320" width="500" height="64" fill="#dfe8f7" rx="12" stroke="#12397a" stroke-width="4" /><rect x="140" y="410" width="500" height="64" fill="#ffffff" rx="12" stroke="#dde2ea" stroke-width="3" /><polygon points="560,340 590,340 575,370" fill="#12397a" /></svg></div>
+        <h3>Absences flagged</h3><p>Children with repeated absences shown before the return is made.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_absences">I need this</a>
+      </article>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">Crèche with 46 children, three rooms. Each morning and afternoon the room leaders sign children in and out on the tablet. On Monday the manager opens last week's figures: hours per child against their NCS registration, the ECCE sessions attended, and two children with three absences in a row to follow up with the parents.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  <section id="example" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Example</h2>
+      <p>Crèche with 46 children, three rooms. Each morning and afternoon the room leaders sign children in and out on the tablet. On Monday the manager opens last week's figures: hours per child against their NCS registration, the ECCE sessions attended, and two children with three absences in a row to follow up with the parents.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="20" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">tablet</text><circle cx="600" cy="150" r="20" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">Monday</text><circle cx="960" cy="150" r="20" fill="#12397a" /><text x="960" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">hours</text><rect x="120" y="320" width="960" height="400" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="170" y="400" font-size="36" fill="#0a1524" font-weight="600">children</text><text x="170" y="560" font-size="32" fill="#566174">three rooms</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
-    <p>Crèches and preschools with a DCDE contract deliver the National Childcare Scheme and the ECCE programme, and every week they make returns based on the attendance of each child. That means a daily record of who came, when they arrived and when they left, kept accurately for every child in every room.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>How it works</h2></div>
+    <div class="stack">
+      <p>Crèches and preschools with a DCDE contract deliver the National Childcare Scheme and the ECCE programme, and every week they make returns based on the attendance of each child. That means a daily record of who came, when they arrived and when they left, kept accurately for every child in every room.</p>
     <p>In many services attendance is still a paper sheet on the wall or a spreadsheet filled in at the end of the day. When the weekly return is due, the manager adds up hours by hand, checks them against each child's registration and hopes nothing was missed on a busy morning.</p>
     <p>The service makes the daily record simple. Each room has a tablet with the children expected that day. Staff tap a child in on arrival and out on collection, and the time is recorded. Late arrivals, early collections and absences are recorded the same way.</p>
     <p>Each child has their scheme details: NCS hours registered, ECCE sessions, and the days and times they are booked. From the daily record the service works out the hours attended and the sessions used for each child.</p>
@@ -114,31 +148,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Room leaders see their own room; the manager sees all rooms and the figures for the whole service. Nothing has to be added up at the end of the week.</p>
     <p>Getting started takes one evening: your rooms, staff and children, with their scheme details, imported from a spreadsheet. It works in the browser on a tablet, a phone or a computer, nothing to install.</p>
     <p>The service is built for crèches and preschools in Ireland delivering NCS and ECCE. It is in preparation: we are checking whether services need it before it is built. The provider remains responsible for its returns and for meeting the scheme's rules.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Questions</h2>
-    <h3>Who is it for?</h3>
-    <p>Crèches and preschools in Ireland with a DCDE contract delivering NCS or ECCE.</p>
-    <h3>How is attendance recorded?</h3>
-    <p>Staff sign each child in and out on a tablet in the room; the time is recorded.</p>
-    <h3>Does it prepare the weekly return?</h3>
-    <p>It works out the attendance and hours for each child against their registration, ready for you to check and enter.</p>
-    <h3>Do I need to install anything?</h3>
-    <p>No, it works in the browser on a tablet, phone or computer.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether services need it.</p>
+    <div class="stack"><h2>Questions</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Who is it for?</h3><p>Crèches and preschools in Ireland with a DCDE contract delivering NCS or ECCE.</p></div>
+      <div class="split flip"><h3>How is attendance recorded?</h3><p>Staff sign each child in and out on a tablet in the room; the time is recorded.</p></div>
+      <div class="split flip"><h3>Does it prepare the weekly return?</h3><p>It works out the attendance and hours for each child against their registration, ready for you to check and enter.</p></div>
+      <div class="split flip"><h3>Do I need to install anything?</h3><p>No, it works in the browser on a tablet, phone or computer.</p></div>
+      <div class="split flip"><h3>Can I use it already?</h3><p>Not yet. The service is in preparation, and we are checking whether services need it.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Add your service</h2>
-    <p><label>Children enrolled<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Up to 15</option><option>15–40</option><option>40–80</option><option>More than 80</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Add your service</h2>
+    </div>
+    <div class="tile stack">
+      <label>Children enrolled<select data-ev-focus="form_start"><option value="">— please choose —</option><option>Up to 15</option><option>15–40</option><option>40–80</option><option>More than 80</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Start</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Attendance Sheet</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
-  <p class="muted">Attendance records and return figures for your service. The provider remains responsible for its returns and the scheme's rules.</p>
+  <p>Attendance records and return figures for your service. The provider remains responsible for its returns and the scheme's rules.</p>
 </div></footer>
 
 </body>
